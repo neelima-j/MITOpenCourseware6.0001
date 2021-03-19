@@ -1,7 +1,6 @@
 # 6.0001/6.00 Problem Set 5 - RSS Feed Filter
-# Name:
-# Collaborators:
-# Time:
+# Name:neelima-j
+
 
 import feedparser
 import string
@@ -159,7 +158,7 @@ class TimeTrigger(Trigger):
 class BeforeTrigger(TimeTrigger):
     def evaluate(self,story):
         '''
-        fires when a story is published strictly before the trigger’s time
+        Fires when a story is published strictly before the trigger’s time
         '''
         story.pubdate = story.pubdate.replace(tzinfo = None)
         
